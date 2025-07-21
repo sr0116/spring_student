@@ -10,6 +10,11 @@ import java.util.List;
 public interface GonggoMapper {
 
     List <Gonggo> gonggoList();
+    Gonggo selectOneGonggo(int gonggoNo);
+
+    void insertGonggo(Gonggo gonggo);
+    void deleteGonggo(int gonggoNo);
+    void updateGonggo(Gonggo gonggo);
 
 
 

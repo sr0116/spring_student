@@ -13,4 +13,9 @@ public interface ResumeMapper {
     Resume selectOneResume(int userNo);
 
     void insertResume(Resume resume);
+    void deleteResume(int resumeNo);
+    void updateResume(Resume resume);
+
+
+
 }

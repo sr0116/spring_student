@@ -70,7 +70,7 @@ public class BusinessUserTest {
     }
 
     @Test
-    public void remeve(){
+    public void remove(){
         int userNo = 2;
         mapper.deleteBusiness(userNo);
     }

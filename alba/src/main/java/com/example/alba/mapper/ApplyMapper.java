@@ -11,7 +11,11 @@ public interface ApplyMapper {
 
     List <Apply> applyList();
 
+    Apply selectOneResume(int applyNo);
 
+    void insertApply(Apply apply);
+    void deleteApply(int applyNo);
+    void updateApply(Apply apply);
 
 
 

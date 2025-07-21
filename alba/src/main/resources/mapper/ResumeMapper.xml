@@ -22,8 +22,8 @@
 
 
     <!-- 리스트 조회 -->
-    <select id="resumeList" resultMap="ResumeResultMap">
-        select r.resume_no, a.name,  a.id, a.pw, a.area
+    <select id="resumeList" resultType="com.example.alba.domain.Resume">
+        select r.resume_no,r.user_no, r.title ,r.introduce , a.user_no , a.name,  a.id, a.pw, a.area
         from resume r
                  join alba_user a on r.user_no = a.user_no
     </select>
@@ -33,5 +33,26 @@
         from resume
         where user_no = #{userNo} LIMIT 1
     </select>
+
+
+    <delete id="deleteResume">
+        DELETE FROM resume where resume_no = #{resumeNo}
+    </delete>
+
+    <insert id="insertResume" useGeneratedKeys="true" keyProperty="resumeNo">
+        INSERT into resume (user_no , title, introduce)
+        VALUES
+            (#{userNo}, #{title}, #{introduce})
+    </insert>
+
+    <update id="updateResume">
+        UPDATE resume
+        set
+            title = #{title},
+            introduce = #{introduce}
+        where resume_no = #{resumeNo}
+    </update>
+
+
 
 </mapper>
