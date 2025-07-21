@@ -1,0 +1,25 @@
+spring:
+  config:
+    import: optional:classpath:./secret/db.yml
+  application:
+    name: alba  # 프로젝트 이름 (Spring 내부 및 로그에서 사용)
+
+  datasource:
+    hikari:
+      maximum-pool-size: 10           # 커넥션 풀 최대 크기
+      minimum-idle: 5                 # 최소 유휴 커넥션 수
+      idle-timeout: 30000             # 유휴 커넥션 유지 시간(ms)
+      pool-name: HikariCP             # 커넥션 풀 이름
+      max-lifetime: 18000000          # 커넥션 최대 생존 시간(ms)
+      connection-timeout: 20000       # 커넥션 시도 제한 시간(ms)
+
+# 아래 설정은 log4jdbc 디버깅용 옵션입니다 (필요 시 주석 해제)
+# log4jdbc.spylogdelegator.name: net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator
+# log4jdbc.dump.sql.maxlinelength: 0
+# log4jdbc.drivers: org.mariadb.jdbc.Driver
+
+mybatis:
+  type-aliases-package: com.example.alba.domain   # 도메인 클래스 패키지 (alias 생략용)
+  mapper-locations: classpath:mapper/*.xml         # MyBatis 매퍼 XML 경로 (resources 기준)
+  configuration:
+    map-underscore-to-camel-case: true             # DB의 snake_case → Java의 camelCase 자동 매핑

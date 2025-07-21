@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.alba.mapper.AlbaUserMapper">
+
+    <!-- 리스트 조회 -->
+    <select id="albaUserList" resultType="alba">
+        SELECT * FROM alba_user
+    </select>
+
+    <!--  단일 조회  -->
+
+    <select id="selectOneAlba" resultType="alba">
+        select * from alba_user where user_no = #{userNo};
+    </select>
+
+    <insert id="insertAlba" useGeneratedKeys="true" keyProperty="userNo">
+        insert INTO alba_user (name, tel, id, pw, area)
+        VALUES
+            (#{name}, #{tel}, #{id}, #{pw}, #{area})
+    </insert>
+
+    <delete id="deleteAlba">
+        DELETE From alba_user where user_no = #{userNo}
+    </delete>
+
+    <update id="updateAlba">
+        UPDATE alba_user
+            set name = #{name},
+            tel = #{tel},
+            id = #{id},
+            pw = #{pw},
+            area = #{area}
+        where user_no = #{userNo}
+    </update>
+
+</mapper>

@@ -1,0 +1,19 @@
+package com.example.alba.mapper;
+
+import com.example.alba.domain.AlbaUser;
+import com.example.alba.domain.Apply;
+import org.apache.ibatis.annotations.Mapper;
+
+import java.util.List;
+
+@Mapper
+public interface ApplyMapper {
+
+    List <Apply> applyList();
+
+
+
+
+
+
+}
