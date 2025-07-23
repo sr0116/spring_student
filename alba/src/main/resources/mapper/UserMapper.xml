@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.alba.mapper.UserMapper">
+
+    <!-- 리스트 조회 -->
+    <select id="UserList" resultType="user">
+        SELECT * FROM tbl_user
+    </select>
+
+    <!--  단일 조회  -->
+
+    <select id="selectOneUser" resultType="user">
+        select * from tbl_user where user_no = #{userNo};
+    </select>
+
+    <select id="findById" resultType="user">
+        SELECT id, pw
+        from tbl_user where id = #{id} and pw = #{pw}
+    </select>
+
+
+    <select id="readById" resultType="user">
+        SELECT id , pw
+        from tbl_user where id = #{id} and pw = #{pw}
+    </select>
+
+    <insert id="insertUser" useGeneratedKeys="true" keyProperty="userNo">
+        insert INTO tbl_user (name, tel, id, pw, area, company_area, company_name, company_number, member_type)
+        VALUES
+            (#{name}, #{tel}, #{id}, #{pw}, #{area},#{companyArea},#{companyName}, #{companyNumber}, #{memberType})
+    </insert>
+
+    <delete id="deleteUser">
+        DELETE FROM tbl_user where user_no = #{userNo}
+    </delete>
+
+    <update id="updateUser">
+        update tbl_user
+        set name = #{name},
+            tel = #{tel},
+            id = #{id},
+            pw = #{pw},
+            area = #{area},
+            company_area = #{companyArea},
+            company_name = #{companyName},
+            company_number = #{companyNumber},
+            member_type =  #{memberType}
+        where user_no = #{userNo}
+
+    </update>
+
+
+
+
+
+
+
+</mapper>

@@ -18,6 +18,6 @@ public class Apply {
     private int gonggoNo;
     private int resumeNo;
     private LocalDateTime applyDate;
-    private int applySitu; // 1: 접수, 2: 등록
+    private int applyNo; // 1: 접수, 2: 등록
     private int userNo;
 }

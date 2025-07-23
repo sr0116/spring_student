@@ -24,6 +24,6 @@ public class Gonggo {
     private LocalDate workingStartDate;
     private LocalDate workingEndDate;
     private boolean state;
-    private String comArea;
+    private String comeArea;
     private String tel;
 }

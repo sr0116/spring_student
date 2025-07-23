@@ -1,8 +1,6 @@
 package com.example.alba;
 
-import com.example.alba.domain.AlbaUser;
 import com.example.alba.domain.Resume;
-import com.example.alba.mapper.AlbaUserMapper;
 import com.example.alba.mapper.ResumeMapper;
 import org.junit.jupiter.api.Test;
 import org.mybatis.spring.annotation.MapperScan;

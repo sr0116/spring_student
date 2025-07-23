@@ -10,20 +10,20 @@
         SELECT * FROM gonggo
     </select>
 
+    <select id="selectAllGonggo" resultType="gonggo_read_dto">
+        select * from tbl_gonggo join tbl_user using(user_no)
+    </select>
 
     <select id="selectOneGonggo" resultType="com.example.alba.domain.Gonggo">
         select * from gonggo where gonggo_no = #{gonggoNo};
     </select>
 
-    <delete id="deleteGonggo">
-        DELETE FROM gonggo where gonggo_no = #{gonggoNo}
-    </delete>
 
-    <insert id="insertGonggo">
+    <insert id="insertGonggo" useGeneratedKeys="true" keyProperty="gonggoNo">
         insert INTO gonggo
-        (user_no , title, role, work_hours, wage, working_start_date,working_end_date , state, com_area, tel)
+        (user_no , title, role, work_hours, wage, working_start_date,working_end_date , state, come_area, tel)
         VALUES
-            (#{userNo}, #{title}, #{role}, #{workHours}, #{wage}, #{workingStartDate},#{workingEndDate}, true, #{comArea}, #{tel})
+            (#{userNo}, #{title}, #{role}, #{workHours}, #{wage}, #{workingStartDate},#{workingEndDate}, true, #{comeArea}, #{tel})
     </insert>
 
     <update id="updateGonggo">
@@ -35,10 +35,14 @@
                 working_start_date =  #{workingStartDate} ,
                 working_end_date = #{workingEndDate} ,
                 state = true,
-                com_area = #{comArea} ,
+                come_area = #{comeArea} ,
                 tel = #{tel}
                 where gonggo_no =  #{gonggoNo}
     </update>
+
+    <delete id="deleteGonggo">
+        DELETE FROM gonggo where gonggo_no = #{gonggoNo}
+    </delete>
 
 
 

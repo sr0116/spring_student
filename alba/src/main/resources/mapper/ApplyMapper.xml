@@ -10,4 +10,12 @@
         SELECT * FROM  apply
     </select>
 
+    <select id="selectOneApply" resultType="com.example.alba.domain.Apply">
+        SELECT * FROM  apply
+    </select>
+
+
+    <delete id="deleteApply">
+        DELETE FROM apply where Appl_no = #{ApplyNo}
+    </delete>
 </mapper>

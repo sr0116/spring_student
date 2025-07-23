@@ -1,6 +1,5 @@
 package com.example.alba.mapper;
 
-import com.example.alba.domain.AlbaUser;
 import com.example.alba.domain.Apply;
 import org.apache.ibatis.annotations.Mapper;
 
@@ -11,7 +10,7 @@ public interface ApplyMapper {
 
     List <Apply> applyList();
 
-    Apply selectOneResume(int applyNo);
+    Apply selectOneApply(int applyNo);
 
     void insertApply(Apply apply);
     void deleteApply(int applyNo);

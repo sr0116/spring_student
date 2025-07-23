@@ -1,5 +1,6 @@
 package com.example.alba.domain;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -10,14 +11,17 @@ import org.apache.ibatis.type.Alias;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Alias("businessUser")
-public class BusinessUser {
+@Alias("user")
+public class User {
+//    일반 회원
     private int userNo;
     private String name;
     private String tel;
     private String id;
     private String pw;
     private String area;
+    private int memberType;
+    private String companyArea;
     private String companyName;
     private String companyNumber;
 }
