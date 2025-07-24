@@ -153,3 +153,87 @@
 20:21:21.507 [main] INFO  sqltiming - SELECT id, pw
         from tbl_user where id = '4' and pw = '4'
  {executed in 4 msec}
+20:56:49.127 [main] INFO  AlbaApplication - Starting AlbaApplication using Java 21.0.7 on DESKTOP-60CLFDG with PID 11472 (C:\Users\tj\albazone_spring\alba\build\classes\java\main started by tj in C:\Users\tj\albazone_spring\alba)
+20:56:49.131 [main] INFO  AlbaApplication - No active profile set, falling back to 1 default profile: "default"
+20:56:50.355 [main] INFO  AlbaApplication - Started AlbaApplication in 1.662 seconds (JVM running for 3.634)
+20:56:54.631 [main] INFO  sqltiming - SELECT id, pw
+        from tbl_user where id = '4' and pw = '4'
+ {executed in 8 msec}
+20:56:54.657 [main] INFO  sqltiming - SELECT id, pw
+        from tbl_user where id = '4' and pw = '4'
+ {executed in 4 msec}
+20:56:54.663 [main] INFO  sqltiming - SELECT id, pw
+        from tbl_user where id = '4' and pw = '4'
+ {executed in 5 msec}
+20:58:10.069 [main] INFO  AlbaApplication - Starting AlbaApplication using Java 21.0.7 on DESKTOP-60CLFDG with PID 15236 (C:\Users\tj\albazone_spring\alba\build\classes\java\main started by tj in C:\Users\tj\albazone_spring\alba)
+20:58:10.072 [main] INFO  AlbaApplication - No active profile set, falling back to 1 default profile: "default"
+20:58:11.306 [main] INFO  AlbaApplication - Started AlbaApplication in 1.821 seconds (JVM running for 3.569)
+20:58:17.249 [main] INFO  sqltiming - SELECT id, pw
+        from tbl_user where id = '4' and pw = '4'
+ {executed in 6 msec}
+20:58:17.273 [main] INFO  sqltiming - SELECT id, pw
+        from tbl_user where id = '4' and pw = '4'
+ {executed in 5 msec}
+20:58:30.975 [main] INFO  AlbaApplication - Starting AlbaApplication using Java 21.0.7 on DESKTOP-60CLFDG with PID 10512 (C:\Users\tj\albazone_spring\alba\build\classes\java\main started by tj in C:\Users\tj\albazone_spring\alba)
+20:58:30.977 [main] INFO  AlbaApplication - No active profile set, falling back to 1 default profile: "default"
+20:58:32.160 [main] INFO  AlbaApplication - Started AlbaApplication in 1.66 seconds (JVM running for 2.589)
+20:58:41.809 [main] INFO  sqltiming - SELECT id, pw
+        from tbl_user where id = '4' and pw = '4'
+ {executed in 5 msec}
+20:58:41.831 [main] INFO  sqltiming - SELECT id, pw
+        from tbl_user where id = '4' and pw = '4'
+ {executed in 5 msec}
+20:58:41.835 [main] INFO  sqltiming - SELECT id, pw
+        from tbl_user where id = '4' and pw = '4'
+ {executed in 4 msec}
+21:01:02.718 [main] INFO  AlbaApplication - Starting AlbaApplication using Java 21.0.7 on DESKTOP-60CLFDG with PID 10872 (C:\Users\tj\albazone_spring\alba\build\classes\java\main started by tj in C:\Users\tj\albazone_spring\alba)
+21:01:02.720 [main] INFO  AlbaApplication - No active profile set, falling back to 1 default profile: "default"
+21:01:03.941 [main] INFO  AlbaApplication - Started AlbaApplication in 1.717 seconds (JVM running for 3.052)
+21:01:15.081 [main] INFO  sqltiming - SELECT id, pw
+        from tbl_user where id = '1' and pw = '1'
+ {executed in 5 msec}
+21:01:20.242 [main] INFO  AlbaApplication - Starting AlbaApplication using Java 21.0.7 on DESKTOP-60CLFDG with PID 8492 (C:\Users\tj\albazone_spring\alba\build\classes\java\main started by tj in C:\Users\tj\albazone_spring\alba)
+21:01:20.244 [main] INFO  AlbaApplication - No active profile set, falling back to 1 default profile: "default"
+21:01:21.473 [main] INFO  AlbaApplication - Started AlbaApplication in 1.65 seconds (JVM running for 2.513)
+21:01:28.384 [main] INFO  sqltiming - SELECT id, pw
+        from tbl_user where id = '3' and pw = '3'
+ {executed in 5 msec}
+21:01:28.410 [main] INFO  sqltiming - SELECT id, pw
+        from tbl_user where id = '3' and pw = '3'
+ {executed in 5 msec}
+21:01:28.414 [main] INFO  sqltiming - SELECT id, pw
+        from tbl_user where id = '3' and pw = '3'
+ {executed in 4 msec}
+21:01:33.353 [main] INFO  sqltiming - SELECT id, pw
+        from tbl_user where id = '4' and pw = '4'
+ {executed in 4 msec}
+21:01:33.359 [main] INFO  sqltiming - SELECT id, pw
+        from tbl_user where id = '4' and pw = '4'
+ {executed in 5 msec}
+21:01:33.364 [main] INFO  sqltiming - SELECT id, pw
+        from tbl_user where id = '4' and pw = '4'
+ {executed in 4 msec}
+21:02:02.721 [main] INFO  AlbaApplication - Starting AlbaApplication using Java 21.0.7 on DESKTOP-60CLFDG with PID 12216 (C:\Users\tj\albazone_spring\alba\build\classes\java\main started by tj in C:\Users\tj\albazone_spring\alba)
+21:02:02.724 [main] INFO  AlbaApplication - No active profile set, falling back to 1 default profile: "default"
+21:02:04.020 [main] INFO  AlbaApplication - Started AlbaApplication in 1.71 seconds (JVM running for 2.676)
+21:02:08.373 [main] INFO  sqltiming - SELECT id, pw
+        from tbl_user where id = '4' and pw = '4'
+ {executed in 4 msec}
+21:02:08.396 [main] INFO  sqltiming - SELECT id, pw
+        from tbl_user where id = '4' and pw = '4'
+ {executed in 5 msec}
+21:02:08.400 [main] INFO  sqltiming - SELECT id, pw
+        from tbl_user where id = '4' and pw = '4'
+ {executed in 4 msec}
+21:02:25.777 [main] INFO  AlbaApplication - Starting AlbaApplication using Java 21.0.7 on DESKTOP-60CLFDG with PID 10912 (C:\Users\tj\albazone_spring\alba\build\classes\java\main started by tj in C:\Users\tj\albazone_spring\alba)
+21:02:25.784 [main] INFO  AlbaApplication - No active profile set, falling back to 1 default profile: "default"
+21:02:27.042 [main] INFO  AlbaApplication - Started AlbaApplication in 1.804 seconds (JVM running for 2.794)
+21:02:30.620 [main] INFO  sqltiming - SELECT id, pw
+        from tbl_user where id = '4' and pw = '4'
+ {executed in 6 msec}
+21:02:30.644 [main] INFO  sqltiming - SELECT id, pw
+        from tbl_user where id = '4' and pw = '4'
+ {executed in 5 msec}
+21:02:30.650 [main] INFO  sqltiming - SELECT id, pw
+        from tbl_user where id = '4' and pw = '4'
+ {executed in 5 msec}

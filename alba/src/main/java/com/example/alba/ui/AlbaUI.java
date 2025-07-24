@@ -38,8 +38,16 @@ public class AlbaUI {
     boolean result = userService.readById(id, pw);
     if (result) {
       loginUser = userService.findById(id, pw);
-      System.out.println("로그인 되었습니다.");
-    } else {
+      if (loginUser.getMemberType() == 1) {
+        System.out.println("사업자 회원 로그인 되었습니다.");
+        businessUser();// 비즈니스회원
+      }
+     else if (loginUser.getMemberType() == 0) {
+        System.out.println("개인 회원 로그인 되었습니다.");
+        // 개인회원
+      }
+    }
+    else {
       System.out.println("현재 가입된 아이디가 없거나 비밀번호 틀림");
     }
   }
@@ -110,15 +118,24 @@ public class AlbaUI {
           System.out.println("회원가입한 유저 user_no" + user.getUserNo());
           break;
       }
-    } else if (loginUser.getMemberType() == 1) {
+    }
+  }
+
+  public void businessUser() {
+    if (loginUser.getMemberType() == 1) {
       int no = AlbaUtil.nextInt("1. 공고 2. 회원정보 조회 3. 회원정보 수정 4. 회원탈퇴 5. 로그아웃", s -> s > 0 && s <= 5, "1 ~ 5 사이의 번호를 입력해주세요");
       switch (no) {
         case 1:
+          break;
         case 2:
-
+          break;
         case 3:
+          break;
         case 4:
+          break;
         case 5:
+          break;
+
 
       }
     }
